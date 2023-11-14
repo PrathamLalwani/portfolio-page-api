@@ -1,5 +1,7 @@
 // Import all functions from hello-from-lambda.js
-import { handler } from "../../../src/handlers/send-email.mjs";
+// import { handler } from "../../../src/handlers/send-email.js";
+
+import { handler } from "../../../src/handlers/send-email.js";
 
 describe("Test for hello-from-lambda", () => {
   // This test invokes the hello-from-lambda Lambda function and compares the result
