@@ -1,5 +1,5 @@
 // Import all functions from hello-from-lambda.js
-const lambda = require("../../../src/handlers/send-email.js");
+import { handler } from "../../../src/handlers/send-email.mjs";
 
 describe("Test for hello-from-lambda", () => {
   // This test invokes the hello-from-lambda Lambda function and compares the result
@@ -10,7 +10,7 @@ describe("Test for hello-from-lambda", () => {
       email: "prathamlalwani33@gmail.com",
       message: "testing update",
     };
-    const result = await lambda.handler(body);
+    const result = await handler(body);
 
     /*
             The expected result should match the return from your Lambda function.
